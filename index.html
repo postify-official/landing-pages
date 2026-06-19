@@ -1,1 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Speaking Practice with AI — Get Real Band Score Feedback | SpeakMate</title>
+<meta name="description" content="Practice IELTS & TOEFL speaking with an AI examiner that gives instant feedback on grammar, fluency, vocabulary and pronunciation — the four real band-score criteria. Free, no account, audio never leaves your phone.">
+<meta name="keywords" content="IELTS speaking practice, IELTS speaking app, AI IELTS examiner, TOEFL speaking practice, IELTS band score practice, speaking test preparation">
+<link rel="canonical" href="https://speakmate.app/">
 
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="IELTS Speaking Practice with AI — Real Band Score Feedback">
+<meta property="og:description" content="An AI speaking partner that scores you the way real examiners do: Fluency, Vocabulary, Grammar, Pronunciation. Practice anytime, free.">
+<meta property="og:url" content="https://speakmate.app/">
+<meta property="og:image" content="https://speakmate.app/assets/og-ielts.png">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IELTS Speaking Practice with AI — Real Band Score Feedback">
+<meta name="twitter:description" content="Practice IELTS speaking with instant AI feedback on the four real band-score criteria. Free, no account needed.">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "SpeakMate: AI English Speaking",
+  "applicationCategory": "EducationApplication",
+  "operatingSystem": "Android",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "AI-powered IELTS and TOEFL speaking practice app with real-time grammar, vocabulary, fluency and pronunciation feedback."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can AI really predict my IELTS speaking band score?",
+      "acceptedAnswer": { "@type": "Answer", "text": "SpeakMate scores your Grammar, Vocabulary, Fluency and Pronunciation after every response using the same four criteria real IELTS examiners use. It's a practice estimate to guide your preparation, not an official certified score." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SpeakMate free for IELTS practice?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. SpeakMate is currently completely free with no daily limits and no account required." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does SpeakMate store my voice recordings?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Your voice is converted to text on your device and the raw audio is never uploaded to any server." }
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ink:#0B1B3A; --ink-soft:#1E2D52; --cream:#F7F4ED; --cream-deep:#EFE9DA;
+  --amber:#D98E04; --amber-deep:#B5740200; --line:#D8D2C2; --green:#1F6E43;
+  --serif: 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+
+/* ===== TOP EXAM STRIP ===== */
+.exam-strip{background:var(--ink);color:var(--cream);font-family:var(--mono);font-size:12px;letter-spacing:.08em;padding:9px 0;text-align:center;text-transform:uppercase}
+.exam-strip strong{color:var(--amber)}
+
+/* ===== NAV ===== */
+nav{padding:22px 0;border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center}
+.brand{font-family:var(--serif);font-weight:700;font-size:22px;letter-spacing:-.01em}
+.brand span{color:var(--amber)}
+.nav-cta{font-family:var(--sans);font-weight:600;font-size:14px;background:var(--ink);color:var(--cream);padding:11px 22px;border-radius:3px;text-decoration:none;border:1px solid var(--ink)}
+
+/* ===== HERO ===== */
+.hero{padding:76px 0 64px;border-bottom:1px solid var(--line);position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--green);text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:22px}
+.eyebrow::before{content:"";width:8px;height:8px;background:var(--green);border-radius:50%;display:inline-block}
+h1{font-family:var(--serif);font-size:3.1rem;line-height:1.08;font-weight:700;letter-spacing:-.01em;margin-bottom:24px}
+h1 em{font-style:italic;color:var(--amber)}
+.hero-sub{font-size:19px;color:var(--ink-soft);max-width:480px;margin-bottom:34px}
+.cta-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.btn-primary{background:var(--ink);color:var(--cream);font-weight:700;font-size:16px;padding:17px 30px;border-radius:3px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:transform .15s ease}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{font-weight:600;font-size:15px;color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.trust-row{display:flex;gap:24px;margin-top:30px;flex-wrap:wrap}
+.trust-item{font-size:13px;color:var(--ink-soft);display:flex;align-items:center;gap:7px}
+.trust-item::before{content:"✓";color:var(--green);font-weight:700}
+
+/* Band score mockup — SIGNATURE ELEMENT */
+.band-card{background:var(--ink);color:var(--cream);border-radius:6px;padding:32px;position:relative;box-shadow:14px 14px 0 var(--cream-deep), 14px 14px 0 1px var(--line)}
+.band-card-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(247,244,237,.18);padding-bottom:18px;margin-bottom:22px}
+.band-card-head span{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;opacity:.6}
+.band-score-big{font-family:var(--serif);font-size:64px;font-weight:700;line-height:1;color:var(--amber)}
+.band-score-label{font-family:var(--mono);font-size:11px;opacity:.7;margin-top:4px}
+.band-rows{display:flex;flex-direction:column;gap:14px;margin-top:24px}
+.band-row{display:grid;grid-template-columns:120px 1fr 34px;align-items:center;gap:12px;font-size:13px}
+.band-row-label{font-family:var(--mono);opacity:.85}
+.band-bar-track{height:7px;background:rgba(247,244,237,.15);border-radius:4px;overflow:hidden}
+.band-bar-fill{height:100%;background:var(--amber);border-radius:4px}
+.band-row-val{font-family:var(--mono);text-align:right;opacity:.9}
+
+/* ===== SECTION GENERIC ===== */
+section{padding:80px 0;border-bottom:1px solid var(--line)}
+.section-head{max-width:640px;margin-bottom:52px}
+.section-tag{font-family:var(--mono);font-size:12px;color:var(--amber);text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px}
+h2{font-family:var(--serif);font-size:2.3rem;line-height:1.15;font-weight:700}
+.section-sub{color:var(--ink-soft);margin-top:14px;font-size:17px}
+
+/* ===== FOUR CRITERIA ===== */
+.criteria-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.criteria-card{background:var(--cream);padding:34px 26px}
+.criteria-num{font-family:var(--mono);font-size:13px;color:var(--amber);margin-bottom:18px}
+.criteria-card h3{font-family:var(--serif);font-size:20px;margin-bottom:12px}
+.criteria-card p{font-size:14.5px;color:var(--ink-soft)}
+@media(max-width:880px){.criteria-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.criteria-grid{grid-template-columns:1fr}}
+
+/* ===== HOW IT WORKS ===== */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+.step{position:relative;padding-top:26px}
+.step::before{content:attr(data-n);position:absolute;top:-10px;left:0;font-family:var(--serif);font-size:46px;font-weight:700;color:var(--cream-deep);z-index:0}
+.step-inner{position:relative;z-index:1;border-left:2px solid var(--amber);padding-left:20px}
+.step h3{font-family:var(--serif);font-size:19px;margin-bottom:8px}
+.step p{font-size:14.5px;color:var(--ink-soft)}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+
+/* ===== TRANSCRIPT DEMO ===== */
+.transcript{background:#fff;border:1px solid var(--line);border-radius:6px;max-width:680px;margin:0 auto;overflow:hidden}
+.transcript-head{background:var(--ink);color:var(--cream);padding:14px 22px;font-family:var(--mono);font-size:12px;display:flex;justify-content:space-between;text-transform:uppercase;letter-spacing:.05em}
+.transcript-body{padding:26px 26px 8px}
+.t-line{margin-bottom:20px;font-size:15.5px}
+.t-speaker{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft);margin-bottom:6px}
+.t-correction{background:#FBF1DC;border-left:3px solid var(--amber);padding:10px 14px;font-size:13.5px;margin-top:8px;border-radius:0 3px 3px 0}
+.t-correction strong{color:var(--green)}
+
+/* ===== TESTIMONIAL STRIP ===== */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.quote-card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:28px}
+.quote-card p{font-size:15px;color:var(--ink-soft);margin-bottom:18px;font-style:italic}
+.quote-name{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+@media(max-width:880px){.quotes{grid-template-columns:1fr}}
+
+/* ===== FAQ ===== */
+.faq-item{border-bottom:1px solid var(--line);padding:24px 0}
+.faq-item summary{font-family:var(--serif);font-size:18px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:24px;color:var(--amber);font-family:var(--sans);transition:transform .2s}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item p{margin-top:14px;color:var(--ink-soft);font-size:15px;max-width:680px}
+
+/* ===== FINAL CTA ===== */
+.final-cta{background:var(--ink);color:var(--cream);padding:90px 0;text-align:center;border-bottom:none}
+.final-cta h2{color:var(--cream);max-width:600px;margin:0 auto 18px}
+.final-cta p{color:rgba(247,244,237,.7);max-width:480px;margin:0 auto 36px;font-size:17px}
+.final-cta .btn-primary{background:var(--amber);color:var(--ink)}
+
+footer{padding:40px 0;font-size:13px;color:var(--ink-soft)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{text-decoration:underline}
+
+@media(max-width:920px){
+  .hero .wrap{grid-template-columns:1fr;gap:48px}
+  h1{font-size:2.4rem}
+  .band-card{box-shadow:8px 8px 0 var(--cream-deep),8px 8px 0 1px var(--line)}
+}
+</style>
+</head>
+<body>
+
+<div class="exam-strip">Practice mode active — <strong>4-criteria scoring</strong> · Fluency · Vocabulary · Grammar · Pronunciation</div>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">Speak<span>Mate</span></div>
+    <a class="nav-cta" href="#download">Get the app</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Built for IELTS &amp; TOEFL candidates</div>
+      <h1>Practice speaking until the <em>real exam</em> feels routine.</h1>
+      <p class="hero-sub">SpeakMate is an AI speaking partner that scores every answer the way examiners do — Fluency, Vocabulary, Grammar, Pronunciation — so you walk in already knowing your weak band.</p>
+      <div class="cta-row">
+        <a class="btn-primary" href="#download">Start practicing free →</a>
+        <a class="btn-ghost" href="#how">See how scoring works</a>
+      </div>
+      <div class="trust-row">
+        <span class="trust-item">No account required</span>
+        <span class="trust-item">Audio never leaves your phone</span>
+        <span class="trust-item">No daily limit</span>
+      </div>
+    </div>
+
+    <div class="band-card">
+      <div class="band-card-head">
+        <span>Session report · Topic: Describe a journey</span>
+        <span>Today</span>
+      </div>
+      <div class="band-score-big">7.5</div>
+      <div class="band-score-label">ESTIMATED PRACTICE BAND</div>
+      <div class="band-rows">
+        <div class="band-row"><span class="band-row-label">Fluency</span><div class="band-bar-track"><div class="band-bar-fill" style="width:88%"></div></div><span class="band-row-val">7.8</span></div>
+        <div class="band-row"><span class="band-row-label">Vocabulary</span><div class="band-bar-track"><div class="band-bar-fill" style="width:79%"></div></div><span class="band-row-val">7.2</span></div>
+        <div class="band-row"><span class="band-row-label">Grammar</span><div class="band-bar-track"><div class="band-bar-fill" style="width:71%"></div></div><span class="band-row-val">6.9</span></div>
+        <div class="band-row"><span class="band-row-label">Pronunciation</span><div class="band-bar-track"><div class="band-bar-fill" style="width:81%"></div></div><span class="band-row-val">7.6</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="criteria">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">The same four criteria</div>
+      <h2>Examiners don't grade on "good English." They grade on this.</h2>
+      <p class="section-sub">Most apps give you a vague "great job!" SpeakMate breaks every response down into the actual categories your speaking test is scored on.</p>
+    </div>
+    <div class="criteria-grid">
+      <div class="criteria-card">
+        <div class="criteria-num">01 / Fluency</div>
+        <h3>Coherence &amp; flow</h3>
+        <p>Are you pausing too long, repeating fillers, or losing your thread mid-answer? SpeakMate flags hesitation patterns in real time.</p>
+      </div>
+      <div class="criteria-card">
+        <div class="criteria-num">02 / Vocabulary</div>
+        <h3>Lexical resource</h3>
+        <p>Get suggestions for higher-band phrasing in place of repeated basic words — the difference between a 6 and a 7.5.</p>
+      </div>
+      <div class="criteria-card">
+        <div class="criteria-num">03 / Grammar</div>
+        <h3>Range &amp; accuracy</h3>
+        <p>Instant corrections on tense, structure, and complex sentence range — explained simply, not just marked wrong.</p>
+      </div>
+      <div class="criteria-card">
+        <div class="criteria-num">04 / Pronunciation</div>
+        <h3>Clarity &amp; stress</h3>
+        <p>Notes on word stress and sounds that examiners commonly mark down, based on what you actually said.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">How a session works</div>
+      <h2>Three minutes. One topic card. A full report.</h2>
+    </div>
+    <div class="steps">
+      <div class="step" data-n="01">
+        <div class="step-inner">
+          <h3>Pick a topic or mission</h3>
+          <p>Choose an IELTS-style cue card topic, or a Role-Play Mission like a job interview, to practice under realistic pressure.</p>
+        </div>
+      </div>
+      <div class="step" data-n="02">
+        <div class="step-inner">
+          <h3>Speak naturally</h3>
+          <p>Tap the mic and answer like you would in the real test. Your AI partner responds and keeps the conversation moving.</p>
+        </div>
+      </div>
+      <div class="step" data-n="03">
+        <div class="step-inner">
+          <h3>Read your breakdown</h3>
+          <p>See your four-criteria score, exactly what to fix, and a corrected version of what you said — saved to your device.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head" style="margin:0 auto 52px;text-align:center">
+      <div class="section-tag" style="justify-content:center;display:flex">What a correction actually looks like</div>
+      <h2>Not just a score. The fix.</h2>
+    </div>
+    <div class="transcript">
+      <div class="transcript-head"><span>Mission: IELTS Part 2 — Describe a place you'd like to visit</span><span>0:42</span></div>
+      <div class="transcript-body">
+        <div class="t-line">
+          <div class="t-speaker">You</div>
+          "I am wanting to visit Japan since long time because I am very interesting in their culture."
+          <div class="t-correction"><strong>Grammar fix:</strong> "I've been wanting to visit Japan for a long time because I'm very interested in their culture." — use present perfect for ongoing desires, and "interested in" not "interesting in."</div>
+        </div>
+        <div class="t-line">
+          <div class="t-speaker">AI Coach</div>
+          "Great topic. What specifically about the culture draws you in — food, history, or something else?"
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">From learners practicing daily</div>
+      <h2>What changes after a few weeks of this.</h2>
+    </div>
+    <div class="quotes">
+      <div class="quote-card">
+        <p>"I stopped freezing during Part 2. Having to actually speak for two minutes every day made the real cue card feel familiar instead of scary."</p>
+        <div class="quote-name">— Practice user, Karachi</div>
+      </div>
+      <div class="quote-card">
+        <p>"The grammar corrections actually explain why, not just what. I started catching my own tense mistakes before the app even did."</p>
+        <div class="quote-name">— Practice user, Lahore</div>
+      </div>
+      <div class="quote-card">
+        <p>"I used the Job Interview mission before my actual visa interview. Different context, same nerves — it helped more than I expected."</p>
+        <div class="quote-name">— Practice user, Islamabad</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">Before you start</div>
+      <h2>Common questions</h2>
+    </div>
+    <div>
+      <details class="faq-item" open>
+        <summary>Can AI really predict my IELTS speaking band score?</summary>
+        <p>SpeakMate scores Grammar, Vocabulary, Fluency and Pronunciation after every response using the same four criteria real examiners use. Treat it as a practice estimate that shows you where to focus — not an official certified score.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is it actually free, or is there a catch?</summary>
+        <p>It's free right now with no daily limit and no account required. Pricing may change in a future version, and you'd always be notified in-app before anything requires payment.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does SpeakMate store my voice recordings?</summary>
+        <p>No. Your voice is converted to text directly on your device. The raw audio is never uploaded anywhere — only the text of what you said is used to generate feedback.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Which accent should I practice with?</summary>
+        <p>Choose American, British, or Indian English depending on what your exam center or target country uses, or switch between them to build broader listening comprehension.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta" id="download" style="border-bottom:none">
+  <div class="wrap">
+    <h2>Your speaking test has a date. Your practice can start today.</h2>
+    <p>Free. No account. No audio stored. Just open the app and talk.</p>
+    <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.speakmate.english">Download SpeakMate on Google Play →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 SpeakMate — com.speakmate.english</span>
+    <span><a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:developerashraf13@gmail.com">Contact</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
