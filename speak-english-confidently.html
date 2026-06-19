@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speak English Confidently with an AI Conversation Partner | SpeakMate</title>
+<meta name="description" content="Practice real spoken English conversations with an AI partner that gives instant feedback. Job interviews, travel, daily talk — build fluency by actually speaking, not memorizing. Free app, no account needed.">
+<meta name="keywords" content="speak english confidently, AI english speaking app, english conversation practice, improve english fluency, english speaking partner app">
+<link rel="canonical" href="https://speakmate.app/speak-english-confidently.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Speak English Confidently with an AI Conversation Partner">
+<meta property="og:description" content="Practice real conversations, get instant feedback, build the fluency that only comes from actually speaking. Free, private, no account needed.">
+<meta property="og:url" content="https://speakmate.app/speak-english-confidently.html">
+<meta property="og:image" content="https://speakmate.app/assets/og-confidence.png">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Speak English Confidently with an AI Conversation Partner">
+<meta name="twitter:description" content="Real conversations. Instant feedback. Zero judgment. Practice spoken English anytime with SpeakMate.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "SpeakMate: AI English Speaking",
+  "applicationCategory": "EducationApplication",
+  "operatingSystem": "Android",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "ratingCount": "1" },
+  "description": "AI-powered English conversation practice app with real-time feedback on grammar, vocabulary, fluency and pronunciation."
+}
+</script>
+
+<style>
+:root{
+  --coral:#FF6B4A; --coral-deep:#E5512F; --plum:#2D1B3D; --plum-soft:#46314F;
+  --cream:#FFF8F0; --mint:#3DD9B3; --ink:#221329; --line:#F2DFD2;
+  --display:'Clash Display','Poppins','Segoe UI',sans-serif;
+  --body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--cream);color:var(--ink);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+
+/* ===== NAV ===== */
+nav{padding:24px 0}
+nav .wrap{display:flex;justify-content:space-between;align-items:center}
+.brand{font-family:var(--display);font-weight:800;font-size:23px;color:var(--plum)}
+.brand span{color:var(--coral)}
+.nav-cta{background:var(--plum);color:var(--cream);font-weight:700;font-size:14px;padding:12px 24px;border-radius:100px}
+
+/* ===== HERO ===== */
+.hero{padding:40px 0 100px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1fr .9fr;gap:50px;align-items:center;position:relative;z-index:2}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.35;z-index:0}
+.blob-1{width:420px;height:420px;background:var(--coral);top:-120px;right:-100px}
+.blob-2{width:300px;height:300px;background:var(--mint);bottom:-80px;left:-60px;opacity:.25}
+
+.pill-row{display:flex;gap:10px;margin-bottom:24px;flex-wrap:wrap}
+.pill{background:var(--plum);color:var(--cream);font-size:12.5px;font-weight:700;padding:7px 16px;border-radius:100px;display:flex;align-items:center;gap:6px}
+.pill.alt{background:var(--mint);color:var(--plum)}
+
+h1{font-family:var(--display);font-size:3.6rem;font-weight:800;line-height:1.02;letter-spacing:-.02em;color:var(--plum);margin-bottom:22px}
+h1 .hl{color:var(--coral);position:relative;display:inline-block}
+h1 .hl svg{position:absolute;bottom:-6px;left:0;width:100%}
+
+.hero-sub{font-size:19px;color:var(--plum-soft);max-width:480px;margin-bottom:34px}
+.cta-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:30px}
+.btn-primary{background:var(--coral);color:#fff;font-weight:800;font-size:17px;padding:18px 32px;border-radius:100px;display:inline-flex;align-items:center;gap:10px;box-shadow:0 14px 30px -10px rgba(255,107,74,.55);transition:transform .15s ease}
+.btn-primary:hover{transform:translateY(-3px) scale(1.02)}
+.btn-secondary{font-weight:700;font-size:15px;color:var(--plum);border-bottom:2px solid var(--plum)}
+
+.mini-stats{display:flex;gap:30px}
+.mini-stat b{font-family:var(--display);font-size:26px;color:var(--plum);display:block}
+.mini-stat span{font-size:12.5px;color:var(--plum-soft)}
+
+/* phone mockup / chat bubble signature element */
+.phone-mock{background:var(--plum);border-radius:34px;padding:18px;box-shadow:0 40px 70px -30px rgba(45,27,61,.5);position:relative}
+.phone-screen{background:var(--cream);border-radius:22px;padding:22px 18px;min-height:480px;display:flex;flex-direction:column;gap:14px}
+.chat-row{display:flex;flex-direction:column;max-width:84%}
+.chat-row.them{align-self:flex-start}
+.chat-row.me{align-self:flex-end;align-items:flex-end}
+.bubble{padding:13px 16px;border-radius:18px;font-size:14.5px;line-height:1.45}
+.them .bubble{background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px;color:var(--ink)}
+.me .bubble{background:var(--coral);color:#fff;border-bottom-right-radius:4px}
+.feedback-chip{margin-top:6px;background:var(--mint);color:var(--plum);font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:100px;display:inline-flex;align-items:center;gap:5px}
+.mic-row{margin-top:auto;display:flex;justify-content:center;padding-top:10px}
+.mic-btn{width:58px;height:58px;background:var(--coral);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 8px rgba(255,107,74,.15)}
+
+/* ===== LOGO / SCENARIO STRIP ===== */
+.strip{background:var(--plum);padding:22px 0;overflow:hidden}
+.strip-track{display:flex;gap:46px;white-space:nowrap;animation:scroll 28s linear infinite;width:max-content}
+.strip-track span{color:var(--cream);font-family:var(--display);font-weight:700;font-size:18px;opacity:.55}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ===== SECTION ===== */
+section{padding:96px 0}
+.section-head{max-width:600px;margin-bottom:54px}
+.eyebrow-tag{font-weight:800;font-size:13px;color:var(--coral);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px}
+h2{font-family:var(--display);font-size:2.6rem;font-weight:800;color:var(--plum);line-height:1.1;letter-spacing:-.01em}
+.section-sub{color:var(--plum-soft);margin-top:16px;font-size:17.5px}
+
+/* feature cards */
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.feature-card{background:#fff;border-radius:24px;padding:32px 28px;border:1px solid var(--line);transition:transform .2s ease}
+.feature-card:hover{transform:translateY(-6px)}
+.feature-icon{width:52px;height:52px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px}
+.feature-icon.c1{background:#FFE4DA}
+.feature-icon.c2{background:#D9F7EF}
+.feature-icon.c3{background:#F1E4FF}
+.feature-card h3{font-family:var(--display);font-size:20px;color:var(--plum);margin-bottom:10px;font-weight:700}
+.feature-card p{font-size:14.5px;color:var(--plum-soft)}
+@media(max-width:880px){.feature-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.feature-grid{grid-template-columns:1fr}}
+
+/* scenario carousel cards */
+.scenario-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.scenario-card{background:var(--plum);border-radius:20px;padding:26px 22px;color:var(--cream);position:relative;overflow:hidden;min-height:160px;display:flex;flex-direction:column;justify-content:flex-end}
+.scenario-card .emoji{font-size:30px;margin-bottom:10px}
+.scenario-card h4{font-family:var(--display);font-size:17px;font-weight:700}
+.scenario-card:nth-child(2n){background:var(--coral)}
+.scenario-card:nth-child(3n){background:#3D2954}
+@media(max-width:880px){.scenario-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.scenario-grid{grid-template-columns:1fr}}
+
+/* before/after */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:24px;overflow:hidden;border:1px solid var(--line)}
+.compare-col{padding:38px 34px}
+.compare-col.before{background:#fff}
+.compare-col.after{background:var(--plum);color:var(--cream)}
+.compare-label{font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:18px;display:block}
+.compare-col.before .compare-label{color:#B0907F}
+.compare-col.after .compare-label{color:var(--mint)}
+.compare-col p{font-size:15.5px;margin-bottom:14px}
+.compare-col.before p{color:var(--plum-soft)}
+@media(max-width:760px){.compare{grid-template-columns:1fr}}
+
+/* testimonials masonry */
+.test-grid{columns:3;column-gap:22px}
+.test-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;margin-bottom:22px;break-inside:avoid}
+.test-card p{font-size:15px;color:var(--plum-soft);margin-bottom:16px}
+.test-name{font-weight:700;font-size:13.5px;color:var(--plum)}
+.test-stars{color:var(--coral);font-size:13px;margin-bottom:10px}
+@media(max-width:880px){.test-grid{columns:2}}
+@media(max-width:600px){.test-grid{columns:1}}
+
+/* final cta */
+.final-cta{background:var(--plum);border-radius:36px;margin:0 28px;padding:80px 40px;text-align:center;position:relative;overflow:hidden}
+.final-cta h2{color:#fff;max-width:560px;margin:0 auto 18px}
+.final-cta p{color:rgba(255,248,240,.7);margin-bottom:34px;font-size:17px}
+
+footer{padding:50px 0 30px;font-size:13.5px;color:var(--plum-soft);text-align:center}
+footer a{text-decoration:underline}
+
+@media(max-width:920px){
+  .hero .wrap{grid-template-columns:1fr;gap:50px}
+  h1{font-size:2.6rem}
+  .phone-mock{max-width:360px;margin:0 auto}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">Speak<span>Mate</span></div>
+    <a class="nav-cta" href="#download">Get the app</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="wrap">
+    <div>
+      <div class="pill-row">
+        <span class="pill">🔥 Daily streaks</span>
+        <span class="pill alt">🔒 100% private</span>
+      </div>
+      <h1>Stop studying English. Start <span class="hl">speaking</span> it.</h1>
+      <p class="hero-sub">SpeakMate is an AI conversation partner that talks back, corrects you in real time, and never makes you feel stupid for trying. Free, no account, no audio ever stored.</p>
+      <div class="cta-row">
+        <a class="btn-primary" href="#download">Try your first conversation →</a>
+        <a class="btn-secondary" href="#how">How it works</a>
+      </div>
+      <div class="mini-stats">
+        <div class="mini-stat"><b>3</b><span>English accents</span></div>
+        <div class="mini-stat"><b>0</b><span>Daily limits</span></div>
+        <div class="mini-stat"><b>4</b><span>Skills scored live</span></div>
+      </div>
+    </div>
+
+    <div class="phone-mock">
+      <div class="phone-screen">
+        <div class="chat-row them">
+          <div class="bubble">Hey! Ready to practice? Let's talk about your weekend. What did you do?</div>
+        </div>
+        <div class="chat-row me">
+          <div class="bubble">I go to my friend house and we was watching movie together.</div>
+          <div class="feedback-chip">✏️ Tense fix available</div>
+        </div>
+        <div class="chat-row them">
+          <div class="bubble">Nice! Quick fix — "I went to my friend's house and we were watching a movie." Want to keep going?</div>
+        </div>
+        <div class="chat-row me">
+          <div class="bubble">Yes, it was a action movie, very exciting one.</div>
+        </div>
+        <div class="mic-row">
+          <div class="mic-btn">🎙️</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="strip-track">
+    <span>JOB INTERVIEWS</span><span>·</span><span>TRAVEL ENGLISH</span><span>·</span><span>DAILY CONVERSATION</span><span>·</span><span>BUSINESS ENGLISH</span><span>·</span><span>SMALL TALK</span><span>·</span><span>PHONE CALLS</span><span>·</span>
+    <span>JOB INTERVIEWS</span><span>·</span><span>TRAVEL ENGLISH</span><span>·</span><span>DAILY CONVERSATION</span><span>·</span><span>BUSINESS ENGLISH</span><span>·</span><span>SMALL TALK</span><span>·</span><span>PHONE CALLS</span><span>·</span>
+  </div>
+</div>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow-tag">Why this actually works</div>
+      <h2>You don't get fluent from flashcards. You get fluent from talking.</h2>
+      <p class="section-sub">Years of grammar drills can't teach your mouth and brain to work together in real time. SpeakMate puts you in that exact situation — speaking, getting corrected, speaking again — until it stops feeling scary.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon c1">🗣️</div>
+        <h3>Real conversations, not quizzes</h3>
+        <p>Talk about your day, debate an opinion, or roleplay a scenario. The AI responds like a person, not a multiple-choice test.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon c2">⚡</div>
+        <h3>Feedback while it's still fresh</h3>
+        <p>Grammar, vocabulary, fluency, and pronunciation notes land right after you speak — not buried in a report you'll never open.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon c3">🎭</div>
+        <h3>Practice the moments that scare you</h3>
+        <p>Job interview tomorrow? Restaurant complaint? Doctor's visit? Role-Play Missions let you rehearse the exact conversation first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow-tag">Role-play missions</div>
+      <h2>Walk into the real conversation already having had it once.</h2>
+    </div>
+    <div class="scenario-grid">
+      <div class="scenario-card"><div class="emoji">💼</div><h4>Job Interview</h4></div>
+      <div class="scenario-card"><div class="emoji">🍽️</div><h4>Restaurant Complaint</h4></div>
+      <div class="scenario-card"><div class="emoji">🏥</div><h4>Doctor's Visit</h4></div>
+      <div class="scenario-card"><div class="emoji">✈️</div><h4>Airport Check-in</h4></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow-tag">The shift</div>
+      <h2>What changes when you practice out loud.</h2>
+    </div>
+    <div class="compare">
+      <div class="compare-col before">
+        <span class="compare-label">Studying alone</span>
+        <p>You know the grammar rules but freeze when you actually need to speak.</p>
+        <p>You rehearse sentences in your head that never come out right in the moment.</p>
+        <p>Mistakes feel embarrassing, so you avoid speaking until you're "ready."</p>
+      </div>
+      <div class="compare-col after">
+        <span class="compare-label">Practicing with SpeakMate</span>
+        <p>You speak first, get corrected instantly, and try again in the same minute.</p>
+        <p>Real scenarios train your mouth to react, not just your brain to recognize rules.</p>
+        <p>No one's watching. No one's judging. You just get better, one conversation at a time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="wrap">
+    <div class="section-head" style="margin:0 auto 50px;text-align:center;max-width:560px">
+      <div class="eyebrow-tag" style="text-align:center">From people practicing daily</div>
+      <h2>Real talk from real learners.</h2>
+    </div>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p>"I've tried three other apps. This is the first one where it actually feels like a conversation, not a quiz with a voice."</p>
+        <div class="test-name">— Practice user</div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p>"The Job Interview mission alone is worth it. I did it five times before my actual interview and felt so much calmer."</p>
+        <div class="test-name">— Practice user</div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★☆</div>
+        <p>"I like that nothing gets saved to some company server. It's just on my phone. That made me way more comfortable making mistakes."</p>
+        <div class="test-name">— Practice user</div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <p>"Switched the accent to British for a trip to London and it genuinely helped my listening more than I expected."</p>
+        <div class="test-name">— Practice user</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download" style="padding-top:0">
+  <div class="final-cta">
+    <h2>Your next conversation in English starts in 30 seconds.</h2>
+    <p>Free forever (for now). No account. No audio stored. Just open the app and talk.</p>
+    <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.speakmate.english">Download SpeakMate free →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 SpeakMate · <a href="privacy-policy.html">Privacy Policy</a> · <a href="mailto:developerashraf13@gmail.com">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
